@@ -1,4 +1,4 @@
-# Production-Grade-3-tier-infrastructure-in-AWS-with-Terraform
+# Production Grade 3 tier infrastructure in AWS with Terraform
 A fully automated AWS infrastructure setup using Terraform. Spins up a production-grade environment with a load-balanced web tier, private compute, a managed MySQL database, and remote state management — all from scratch with a single `terraform apply`.
 
 ---
