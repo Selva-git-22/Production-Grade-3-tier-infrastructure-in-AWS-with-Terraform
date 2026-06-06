@@ -16,7 +16,7 @@ Internet
 [Application Load Balancer]  ← public, spreads traffic across 2 AZs
     │
     ▼
-[Auto Scaling Group]         ← 2–4 x t3.micro EC2 (Amazon Linux 2023, Apache)
+[Auto Scaling Group]         ← 2–4 x t3.micro EC2 (Amazon Linux 2023, httpd)
     │         │
     │         └──(SSH via bastion)──▶ [Private EC2]  ← internal workloads
     │
@@ -117,7 +117,7 @@ Note: the S3 state bucket has `prevent_destroy = true` so it won't be deleted by
 ### Compute
 
 - **Auto Scaling Group**: 2 desired / 2 min / 4 max, `t3.micro`, Amazon Linux 2023
-- **Launch Template**: installs Apache (`httpd`) on boot via user data script
+- **Launch Template**: installs httpd on boot via user data script
 - **Private EC2**: single `t3.micro` in private subnet, accessible only via SSH from the public web instances (bastion pattern)
 
 ### Load Balancer
