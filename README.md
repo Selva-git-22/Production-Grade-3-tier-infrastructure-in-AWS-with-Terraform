@@ -2,6 +2,8 @@
 A fully automated AWS infrastructure setup using Terraform. Spins up a production-grade environment with a load-balanced web tier, private compute, a managed MySQL database, and remote state management — all from scratch with a single `terraform apply`.
 
 ---
+![Architecture Diagram](images/production-grade-3-tier-architecture.png)
+
 
 ## What This Builds
 
@@ -186,9 +188,12 @@ terraform.tfstate.backup
 terraform.tfvars
 *.tfvars
 ```
-
 ---
 
 ## Tech Stack
 
 `Terraform` · `AWS VPC` · `EC2 + ASG` · `Application Load Balancer` · `RDS MySQL` · `S3` · `DynamoDB` · `Amazon Linux 2023`
+
+Author
+
+Selvamani
