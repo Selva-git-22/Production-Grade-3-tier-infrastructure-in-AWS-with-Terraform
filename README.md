@@ -2,7 +2,9 @@
 A fully automated AWS infrastructure setup using Terraform. Spins up a production-grade environment with a load-balanced web tier, private compute, a managed MySQL database, and remote state management — all from scratch with a single `terraform apply`.
 
 ---
-![Architecture Diagram](images/production-grade-3-tier-architecture.png)
+## Architecture Diagram
+
+![Architecture Diagram](images/architecture.png)
 
 
 ## What This Builds
